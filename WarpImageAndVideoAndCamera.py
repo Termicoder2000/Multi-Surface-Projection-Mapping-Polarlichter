@@ -94,20 +94,22 @@ class MediaSource:
     # =========================================================================
 
     def get_frame(self):
-        if self.is_video or self.is_camera:
+        if self.is_video and self.is_camera:
             ret, frame = self.cap.read()
             if not ret:
-                if self.is_camera:
-                    return self.process_frame(self.frame) 
-                else:
-                    # Video-Loop
-                    self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-                    ret, frame = self.cap.read()
-            # VOR der Rückgabe schicken wir das Bild durch unseren Filter
+                return self.process_frame(self.frame) 
             return self.process_frame(frame)
         
+        elif self.is_video:
+            ret, frame = self.cap.read()
+            if not ret:
+                # Video-Loop
+                self.cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+                ret, frame = self.cap.read()
+            return frame
+        
         # Auch normale Bilder durch den Filter schicken
-        return self.process_frame(self.frame)
+        return self.frame
 
 # --- Ab hier bleibt alles wie im vorherigen Code ---
 
