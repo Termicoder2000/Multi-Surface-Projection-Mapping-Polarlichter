@@ -1,0 +1,17 @@
+Programm auf raspi in autostart.
+
+Ordner auf desktop, auf dem befinden sich die bilder / videos drin. Mit 1, 2, 3 usw. benannt werden entsprechend in der reihenfolge vom programm eingelesen und dann geplottet.
+Wenn kamera gewollt ist, in den Odner Camera.txt-File einfügen, dann wird der erste plot automatisch die kamera
+
+Bluetooth Maus und Tastatur zum einstellen dieser bereiche nehmen.
+
+Beamer:
+https://gemini.google.com/share/c5a56485eb53
+
+
+
+DMX:
+
+Relativ simpel, USB zu DMX Converter kaufen (ca. 200 €) - dieser muss auch empfangen können (bzw. eig nur empfangen können)
+und das dann in Python umsetzen
+https://gemini.google.com/share/6ce872f6d1ae
