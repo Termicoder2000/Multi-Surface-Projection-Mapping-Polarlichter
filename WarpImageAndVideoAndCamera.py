@@ -1,3 +1,5 @@
+# https://github.com/fogleman/primitive images with shapes
+
 import cv2
 import numpy as np
 
