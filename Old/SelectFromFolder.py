@@ -1,3 +1,7 @@
+#Select From Folder
+#To Do:
+#Write information about the image processing in the "Camera.txt"-File to cconfigure that
+
 import cv2
 import numpy as np
 import os
@@ -7,7 +11,7 @@ SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
 
 # Hier den Pfad zu deinem Ordner eintragen
-MEDIA_FOLDER = 'Pfad/zum/Ordner' 
+MEDIA_FOLDER = '/home/nils/Desktop/Projects/Beamer/Images' 
 
 # --- Klassen und globale Variablen ---
 class MediaSource:
