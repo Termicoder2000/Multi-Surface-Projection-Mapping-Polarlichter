@@ -29,7 +29,7 @@ Point `MEDIA_FOLDER` in the script to your asset directory. Files are sorted by 
 Images/
 ├── 1_Background.png       -> Standard image
 ├── 2_Animation.mp4        -> Looping video
-├── 3_Webcam.txt           -> Activates live webcam + neon edge filter
+├── 3_Camera.txt           -> Activates live webcam + neon edge filter
 └── 4_BassSensitive.txt    -> Audio-reactive slot (contains path to folder)
 ```
 
@@ -54,9 +54,9 @@ Images/
 | **ENTER** | Toggle between Alignment Grid and Media Playback |
 | **F** | Toggle Fullscreen |
 | **Z** | Undo last clicked corner point or area |
-| **R** | Reset all calibrated surfaces |
-| **$\rightarrow$ (Right Arrow) / `N`** | Shift / rotate all media one surface to the right (with wrap-around) |
-| **$\leftarrow$ (Left Arrow) / `P`** | Shift / rotate all media one surface to the left (with wrap-around) |
+| **P** | Reset all calibrated surfaces |
+| **R or >** | Shift / rotate all media one surface to the right (with wrap-around) |
+| **L or <** | Shift / rotate all media one surface to the left (with wrap-around) |
 | **`1` then `a` (or `a` then `1`)** | Assign Media `1` to Surface `a`. If already active, swaps positions |
 | **ESC** | Quit application |
 
@@ -87,7 +87,7 @@ Setze den Pfad `MEDIA_FOLDER` im Skript auf deinen Zielordner. Die Sortierung er
 Images/
 ├── 1_Hintergrund.png      -> Normales Standbild
 ├── 2_Visual.mp4           -> Video (spielt in Endlosschleife)
-├── 3_Webcam.txt           -> Aktiviert USB-Kamera mit Neon-Kantenfilter
+├── 3_Camera.txt           -> Aktiviert USB-Kamera mit Neon-Kantenfilter
 └── 4_BassSensitive.txt    -> Bass-Reaktiv (enthält Pfad zum Bilderordner)
 ```
 
@@ -112,8 +112,8 @@ Images/
 | **ENTER** | Umschalten zwischen Gitternetz (Einrichten) und Medien |
 | **F** | Vollbildmodus an/aus |
 | **Z** | Letzten Klick oder letzte Fläche rückgängig machen (Undo) |
-| **R** | Alle Flächen löschen (Reset) |
-| **$\rightarrow$ (Pfeil rechts) / `N`** | Alle Medien eine Position nach rechts weiterschieben (mit Überlauf) |
-| **$\leftarrow$ (Pfeil links) / `P`** | Alle Medien eine Position nach links weiterschieben (mit Überlauf) |
+| **P** | Alle Flächen löschen (Reset) |
+| **R oder >** | Alle Medien eine Position nach rechts weiterschieben (mit Überlauf) |
+| **L oder <** | Alle Medien eine Position nach links weiterschieben (mit Überlauf) |
 | **`1` dann `a` (oder `a` dann `1`)** | Weist Media `1` der Fläche `a` zu. Wenn schon aktiv, werden die Plätze getauscht |
 | **ESC** | Programm beenden |
