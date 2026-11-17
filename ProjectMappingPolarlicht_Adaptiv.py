@@ -30,7 +30,7 @@ CANNY_UPPER_THRESHOLD = 40
 MEDIA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Images')
 
 class AudioReactiveMediaSource:
-    def __init__(self, folder_path, bass_min=10, bass_max=20000, max_bass_expected=30000.0):
+    def __init__(self, folder_path, bass_min=10, bass_max=20000, max_bass_expected=3000000.0):
         self.folder_path = folder_path.strip()
         self.name = f"Bass: {os.path.basename(self.folder_path)}"
         self.bass_min = bass_min
