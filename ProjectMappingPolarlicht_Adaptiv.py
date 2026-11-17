@@ -26,8 +26,8 @@ CLAHE_TILE_GRID_SIZE = (8, 8)
 CANNY_LOWER_THRESHOLD = 30
 CANNY_UPPER_THRESHOLD = 40
 
-# Pfad zu deinem Hauptordner mit den Mediendateien
-MEDIA_FOLDER = '/home/nils/Desktop/Projects/Beamer/Images' 
+# Images-Ordner neben diesem Skript
+MEDIA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Images')
 
 class AudioReactiveMediaSource:
     def __init__(self, folder_path, bass_min=10, bass_max=20000, max_bass_expected=30000.0):

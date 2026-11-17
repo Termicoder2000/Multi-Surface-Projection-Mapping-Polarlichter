@@ -23,7 +23,7 @@ SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
 
 # Pfad zu deinem Hauptordner mit den Mediendateien
-MEDIA_FOLDER = '/home/nils/Desktop/Projects/Beamer/Images' 
+MEDIA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Images')
 
 class AudioReactiveMediaSource:
     def __init__(self, folder_path, bass_min=10, bass_max=20000, max_bass_expected=30000.0):
