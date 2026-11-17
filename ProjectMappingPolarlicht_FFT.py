@@ -30,7 +30,7 @@ BASS_MIN_HZ = 1.0
 BASS_MAX_HZ = 50.0
 BASS_CHUNK = int(8192/8)  # 4096 Samples pro Frame
 BASS_FULL_SCALE_RMS = 0.07
-BASS_MIN_RMS_PERCENT = 10.0
+BASS_MIN_RMS_PERCENT = 20.0
 
 # Images-Ordner neben diesem Skript
 MEDIA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Images')

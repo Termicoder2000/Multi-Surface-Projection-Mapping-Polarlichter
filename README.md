@@ -51,17 +51,17 @@ Adjust `BASS_MIN_HZ` and `BASS_MAX_HZ` to select the frequency range, and
 `BASS_FULL_SCALE_RMS` to set the level that reaches the last image stage.
 `BASS_MIN_RMS_PERCENT` is the activation threshold relative to full scale. Below
 it, image 0 stays selected; above it, the remaining level range maps to the
-remaining images (default: 10%).
+remaining images (default: 20%).
 
 #### Streaming low-pass (TP) version
 
 Run `ProjectMappingPolarlicht_TP.py`. Set `BASS_FILTER_ORDER` and
 `BASS_FILTER_FG_HZ` at the top of the script. `BASS_RMS_WINDOW_SAMPLES` controls
 the RMS smoothing window and must be a positive integer; at 44.1 kHz, 32 samples
-are about 0.7 ms and 1024 samples about 23 ms. Smaller windows react faster but
-can make the bass level less stable. `BASS_FULL_SCALE_RMS` sets the level for
-the last image stage. `BASS_MIN_RMS_PERCENT` keeps image 0 selected below the
-activation threshold (default: 2%).
+are about 0.7 ms and 1024 samples about 23 ms. The current setting of 1 sample
+is about 0.023 ms and can make the bass level very unstable. `BASS_FULL_SCALE_RMS`
+sets the level for the last image stage. `BASS_MIN_RMS_PERCENT` keeps image 0
+selected below the activation threshold (default: 2%).
 
 ---
 
@@ -128,7 +128,7 @@ FFT. Mit `BASS_MIN_HZ` und `BASS_MAX_HZ` stellst du den Frequenzbereich ein;
 `BASS_FULL_SCALE_RMS` legt den Pegel für die letzte Bildstufe fest.
 `BASS_MIN_RMS_PERCENT` ist die Einschaltschwelle relativ zu Full Scale. Darunter
 bleibt Bild 0, darüber wird der restliche Pegelbereich auf die weiteren Bilder
-verteilt (Standard: 10 %).
+verteilt (Standard: 20 %).
 
 #### Streaming-Tiefpass-Version (TP)
 
@@ -136,9 +136,10 @@ Starte `ProjectMappingPolarlicht_TP.py`. Filterordnung und Grenzfrequenz stellst
 du oben mit `BASS_FILTER_ORDER` und `BASS_FILTER_FG_HZ` ein.
 `BASS_RMS_WINDOW_SAMPLES` steuert die RMS-Glättung und muss eine positive ganze
 Zahl sein: Bei 44,1 kHz entsprechen 32 Samples etwa 0,7 ms und 1024 Samples etwa
-23 ms. Kleinere Fenster reagieren schneller, können den Basspegel aber
-unruhiger machen. `BASS_FULL_SCALE_RMS` legt den Pegel für die letzte Bildstufe
-fest. Unter `BASS_MIN_RMS_PERCENT` (Standard: 2 %) bleibt Bild 0 ausgewählt.
+23 ms. Die aktuelle Einstellung von 1 Sample entspricht etwa 0,023 ms und kann
+den Basspegel sehr unruhig machen. `BASS_FULL_SCALE_RMS` legt den Pegel für die
+letzte Bildstufe fest. Unter `BASS_MIN_RMS_PERCENT` (Standard: 2 %) bleibt Bild 0
+ausgewählt.
 
 ---
 
