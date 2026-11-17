@@ -44,6 +44,10 @@ Images/
    └── 3_high_detail.png    (played at high bass kick)
    ```
 
+For the corrected bass response, run `ProjectMappingPolarlicht_Adaptiv_BassFix.py`.
+Adjust `BASS_MIN_HZ` and `BASS_MAX_HZ` for the frequency band; lower
+`BASS_FULL_SCALE_RMS` to make the image stages react more strongly.
+
 ---
 
 ### Controls & Keybindings
@@ -55,9 +59,9 @@ Images/
 | **F** | Toggle Fullscreen |
 | **Z** | Undo last clicked corner point or area |
 | **P** | Reset all calibrated surfaces |
-| **R or >** | Shift / rotate all media one surface to the right (with wrap-around) |
-| **L or <** | Shift / rotate all media one surface to the left (with wrap-around) |
-| **`1` then `a` (or `a` then `1`)** | Assign Media `1` to Surface `a`. If already active, swaps positions |
+| **Left / Right Arrow (`<` / `>`)** | Move every surface to the previous / next loaded media, including media not currently shown |
+| **R / L** | Rotate the current media assignments between surfaces |
+| **`1` then `a` (or `a` then `1`)** | Assign Media `1` to Surface `a`; multi-digit media numbers work too, e.g. `10` then `b` |
 | **ESC** | Quit application |
 
 ---
@@ -102,6 +106,10 @@ Images/
    └── 3_detailliert.png    (wird bei lautem Bass / Kickdrum angezeigt)
    ```
 
+Für die korrigierte Bass-Reaktion starte `ProjectMappingPolarlicht_Adaptiv_BassFix.py`.
+`BASS_MIN_HZ` und `BASS_MAX_HZ` legen den Frequenzbereich fest. Ein kleinerer Wert
+für `BASS_FULL_SCALE_RMS` macht die Bildstufen empfindlicher.
+
 ---
 
 ### Steuerung & Tastenbelegung
@@ -113,7 +121,7 @@ Images/
 | **F** | Vollbildmodus an/aus |
 | **Z** | Letzten Klick oder letzte Fläche rückgängig machen (Undo) |
 | **P** | Alle Flächen löschen (Reset) |
-| **R oder >** | Alle Medien eine Position nach rechts weiterschieben (mit Überlauf) |
-| **L oder <** | Alle Medien eine Position nach links weiterschieben (mit Überlauf) |
-| **`1` dann `a` (oder `a` dann `1`)** | Weist Media `1` der Fläche `a` zu. Wenn schon aktiv, werden die Plätze getauscht |
+| **Pfeil links/rechts (`<` / `>`)** | Jede Fläche wechselt zum vorherigen/nächsten geladenen Medium, auch zu aktuell nicht angezeigten |
+| **R / L** | Rotiert die aktuellen Medienzuweisungen zwischen den Flächen |
+| **`1` dann `a` (oder `a` dann `1`)** | Weist Media `1` der Fläche `a` zu; auch mehrstellige Nummern, z. B. `10` dann `b` |
 | **ESC** | Programm beenden |
