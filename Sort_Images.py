@@ -1,7 +1,7 @@
 import os
 
 # Verzeichnis angeben, in dem sich die Bilder befinden ('.' steht für das aktuelle Verzeichnis)
-verzeichnis = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SoundSensitive_2')
+verzeichnis = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SoundSensitive_3')
 
 # Schleife von 0 bis 1000 (range(1001) schließt die 1000 mit ein)
 for i in range(1001):
